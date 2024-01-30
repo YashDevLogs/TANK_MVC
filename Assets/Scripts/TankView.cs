@@ -23,7 +23,7 @@ public class TankView : MonoBehaviour
     void Update()
     {
         Movement();
-
+  
         if(movement != 0)
         {
             tankController.Move(movement,tankController.GetTankModel().movementSpeed);
