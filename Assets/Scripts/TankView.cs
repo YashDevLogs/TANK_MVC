@@ -6,6 +6,7 @@ public class TankView : MonoBehaviour
     private float movement;
     private float rotation;
 
+
     public Rigidbody rb;
 
     public MeshRenderer[] Childs;
@@ -27,6 +28,7 @@ public class TankView : MonoBehaviour
         if(movement != 0)
         {
             tankController.Move(movement,tankController.GetTankModel().movementSpeed);
+
         }
 
         if(rotation != 0)

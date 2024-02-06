@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using EZCameraShake;
 
 public class TankShooting : MonoBehaviour
 {
@@ -77,6 +78,7 @@ public class TankShooting : MonoBehaviour
 
         m_ShootingAudio.clip = m_FireClip;
         m_ShootingAudio.Play();
+        CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, .5f);
 
         m_CurrentLaunchForce = m_MinLaunchForce;
     }
